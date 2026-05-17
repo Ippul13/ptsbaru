@@ -197,9 +197,9 @@
              x-transition:leave="transition ease-in duration-200"
              x-transition:leave-start="opacity-100 translate-y-0"
              x-transition:leave-end="opacity-0 translate-y-[-10px]"
-             class="fixed inset-0 bg-pts-900/98 backdrop-blur-2xl z-40 flex flex-col justify-center items-center md:hidden pt-20 pb-10 px-6" style="display: none;">
+             class="fixed inset-0 bg-pts-900/98 backdrop-blur-2xl z-40 flex flex-col justify-start items-center md:hidden pt-28 pb-10 px-6 overflow-y-auto" style="display: none;">
             
-            <div class="flex flex-col items-center gap-8 w-full max-w-sm">
+            <div class="flex flex-col items-center gap-8 w-full max-w-sm my-auto">
                 <a @click="mobileMenuOpen = false" href="#layanan" class="text-2xl text-white/90 font-serif font-bold hover:text-gold-400 transition-colors">Layanan</a>
                 <a @click="mobileMenuOpen = false" href="#tentang" class="text-2xl text-white/90 font-serif font-bold hover:text-gold-400 transition-colors">Tentang Kami</a>
                 <a @click="mobileMenuOpen = false" href="#proses" class="text-2xl text-white/90 font-serif font-bold hover:text-gold-400 transition-colors">Proses</a>
