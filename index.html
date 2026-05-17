@@ -195,10 +195,13 @@
                         class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-[0_8px_16px_rgba(0,0,0,0.1)] overflow-hidden p-1.5 transition-transform duration-300 group-hover:scale-105">
                         <img src="logo1.png" alt="CV. Permata Teknik Solution" class="w-full h-full object-contain">
                     </div>
-                    <div class="hidden sm:block">
-                        <div class="text-white font-bold text-lg leading-tight tracking-tight drop-shadow-sm">Permata
-                            Teknik</div>
-                        <div class="text-gold-400 text-[10px] font-bold tracking-[0.2em] uppercase">Solution</div>
+                    <div :class="mobileMenuOpen ? 'hidden md:block' : 'block'">
+                        <div
+                            class="text-white font-bold text-base sm:text-lg leading-tight tracking-tight drop-shadow-sm">
+                            Permata
+                            Teknik Solution</div>
+                        <div class="text-gold-400 text-[8px] sm:text-[9px] font-bold tracking-[0.2em] uppercase">
+                            General Supplier and Engineering Service</div>
                     </div>
                 </a>
 
@@ -235,7 +238,7 @@
             x-transition:enter-start="opacity-50 translate-y-[-10px]" x-transition:enter-end="opacity-100 translate-y-0"
             x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100 translate-y-0"
             x-transition:leave-end="opacity-50 translate-y-[-10px]"
-            class="fixed inset-0 bg-pts-900/98 backdrop-blur-2xl z-40 flex flex-col justify-start items-center md:hidden pt-7 pb-10 px-6 overflow-y-auto"
+            class="fixed inset-0 bg-pts-900/98 backdrop-blur-2xl z-40 flex flex-col justify-start items-center md:hidden pt-9 pb-10 px-6 overflow-y-auto"
             style="display: none;">
 
             <div class="flex flex-col items-center gap-4 w-full max-w-xs">
